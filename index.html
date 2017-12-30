@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JS_Form">
+  <meta name="author" content="PAVAN SATISH KUTHA">
+  <title>JavaScript Form</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  
+</head>
+<body>
+<div class="main" >
+  <header> JavaScript Form</header>
+  	<form action="" class="JS_Form" name="JS_Form" method="GET" >
+  		<label for="fname" >First Name</label><span id="fnerr" class="err"></span>
+  		<div class="inp-row">
+  				<input type="text" class="inp" id="fname"  placeholder="Your first name.." class="form-control">
+  		</div>
+  			<label for="fname" >Last Name</label><span id="lnerr" class="err"></span>
+  		<div class="inp-row">
+  				<input type="text" class="inp" id="lname"  placeholder="Your last name.." class="form-control">
+  		</div>
+  			<label for="email" >Email</label><span id="emerr" class="err"></span>
+  		<div class="inp-row">
+  				<input type="text" class="inp" id="email"  placeholder="abc@mail.com" class="form-control">
+  		</div>
+  			<label for="phone" >Phone</label><span id="pherr" class="err"></span>
+  		<div class="inp-row">
+  				<input type="text" class="inp" id="phone"  placeholder="+11 000 12345" class="form-control">
+  		</div>
+  		<label for="gender" >Gender</label><span id="gnerr" class="err" class="form-control"></span>
+  		<div class="inp-row">
+  			<div class="rad">
+  				<input type="radio" class="rad" id="gender" value="Male"   name="gender"  class="form-control" >Male
+  				<input type="radio" class="rad"  value="Female" name="gender">Female
+  			</div>
+  		</div>
+  		<label for="country" >Country</label> <span id="cnerr" class="err"></span>
+  		<div class="inp-row">
+  			<select id="sele"  name="country" class="form-control" >
+  				<option value="" >--choose country--</option>
+  				<option value="australia" >Australia</option>
+               	<option value="India" >India</option>
+          		<option value="usa" >USA</option>
+        	</select>
+     	</div>
+      	<div class="inp-row">
+        	<label for="agree" class="agree"><input type="checkbox" name="checkbox" id="cbox"  class="form-control">Agree to Privacy Policy</label><span id="agerr" class="err"></span>
+      	</div>
+        	<input type="submit" name="submit" class="sub-btn"   value="Submit" onclick="return validateAll()" >
+    </form>
+</div>
+<div class="path"></div>
+<script type="text/javascript" src="/assets/js/script.js"></script>
+</body>
+</html>
+      
+
+
+
+    
+
+
+
