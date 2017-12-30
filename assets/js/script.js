@@ -1,4 +1,4 @@
-function validateAll() 
+$(function validateAll() 
 {
     // FirstName Validation
     var x = /^[a-zA-Z\-]+$/;
@@ -8,11 +8,13 @@ function validateAll()
         document.getElementById("fnerr").style.color="red";
         document.getElementById("fname").focus();
         return false;
-    }         
+    }
+//         
         else
         {
             document.getElementById("fnerr").innerHTML = "";
         }
+    
          var x = /^[a-zA-Z\-]+$/;
     var lastnameValid = document.forms["JS_Form"]["lname"].value.match(x);
     if(lastnameValid == null){
@@ -21,6 +23,7 @@ function validateAll()
         document.getElementById("lname").focus();
         return false;
     }
+        
         else
         {
             document.getElementById("lnerr").innerHTML = "";
@@ -69,7 +72,7 @@ function validateAll()
             document.getElementById("gnerr").innerHTML="*Please Select Gender";
       document.getElementById("gnerr").style.color="red";
         document.getElementById("gender").focus();
-            
+            // alert("Please Choose the gender");
             return false;
         }
         else
@@ -95,7 +98,7 @@ function validateAll()
          document.getElementById("agerr").innerHTML="*Please tick the box";
             document.getElementById("agerr").style.color="red";
             document.getElementById("cbox").focus();
-            
+            // alert('You must agree to the terms first.');
             return false;
         }
 
@@ -105,4 +108,4 @@ function validateAll()
         alert(" Details Submitted Successfully!");
         return true;
         }
-};
+});
