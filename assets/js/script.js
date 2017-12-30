@@ -1,4 +1,4 @@
-$(function validateAll() 
+function validateAll() 
 {
     // FirstName Validation
     var x = /^[a-zA-Z\-]+$/;
@@ -98,7 +98,7 @@ $(function validateAll()
          document.getElementById("agerr").innerHTML="*Please tick the box";
             document.getElementById("agerr").style.color="red";
             document.getElementById("cbox").focus();
-            // alert('You must agree to the terms first.');
+            
             return false;
         }
 
@@ -108,4 +108,4 @@ $(function validateAll()
         alert(" Details Submitted Successfully!");
         return true;
         }
-});
+};
